@@ -4,7 +4,7 @@ import {Feature, Map, Overlay, View} from 'ol/index';
 import {OSM, Vector as VectorSource} from 'ol/source';
 import {Point} from 'ol/geom';
 import {Tile as TileLayer, Vector as VectorLayer} from 'ol/layer';
-import {Circle, Fill, Style} from 'ol/style';
+import {Circle, Fill, Stroke, Style} from 'ol/style';
 
 const place = [5.06487985805064, 52.10009048913261]; // Reykjavikplein 1
 
@@ -28,6 +28,7 @@ const featureLayer = new VectorLayer({
     image: new Circle({
       radius: 9,
       fill: new Fill({ color: "red" }),
+      stroke: new Stroke({ color: "black" })
     }),
   }),
 });
