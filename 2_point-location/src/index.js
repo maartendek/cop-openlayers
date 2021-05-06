@@ -6,7 +6,7 @@ import {Point} from 'ol/geom';
 import {Tile as TileLayer, Vector as VectorLayer} from 'ol/layer';
 import {Circle, Fill, Stroke, Style} from 'ol/style';
 
-const place = [5.06487985805064, 52.10009048913261]; // Reykjavikplein 1
+const place = [563836.2560250214, 6818208.299893484]; // Reykjavikplein 1
 
 const map = new Map({
   layers: [
@@ -17,7 +17,7 @@ const map = new Map({
   target: "app",
 });
 
-const point = new Point(place).transform("EPSG:4326", "EPSG:900913");
+const point = new Point(place);
 const features = [new Feature(point)];
 
 const featureLayer = new VectorLayer({
@@ -36,6 +36,6 @@ map.addLayer(featureLayer)
 
 const view = new View({
   center: point.getCoordinates(),
-  zoom: 5,
+  zoom: 15,
 });
 map.setView(view);
