@@ -1,0 +1,37 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "title": "CapGemini Kantoor" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [5.065104961395264, 52.09980965053508]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "title": "Station Leidsche Rijn" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [5.065265893936157, 52.099045135156786]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "title": "Parkeergarage" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [5.063366889953613, 52.098346514818616]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "title": "Bankfiliaal" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [5.065864026546478, 52.09760833804454]
+      }
+    }
+  ]
+}
