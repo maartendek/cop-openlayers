@@ -32,7 +32,7 @@ const featureLayer = new VectorLayer({
     if (!style) {
       style = new Style({
         image: new Circle({
-          radius: 9,
+          radius: size > 1 ? 16 : 9,
           fill: new Fill({ color: "red" }),
           stroke: new Stroke({ color: "black" })
         }),
